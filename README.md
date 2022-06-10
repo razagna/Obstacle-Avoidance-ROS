@@ -1,7 +1,7 @@
 ## Set Up
 ### Dependencies
 1. Follow the official ROS installation guide [here](http://wiki.ros.org/noetic/Installation/Ubuntu) (Gazebo included)
-2. Install the ROS packages for Turtlebot3
+2. Install the ROS packages for **Turtlebot3**
 ```bash
 sudo apt install ros-noetic-turtlebot3
 ```
@@ -11,7 +11,7 @@ sudo apt install ros-noetic-turtlebot3
 ```bash
 mkdir -p catkin_ws/src
 ```
-1. Get the `Turtle3` repository
+1. Clone this repository
 ```bash
 cd catkin_ws/src
 git clone --recursive https://github.com/razagna/Turtle3
@@ -35,7 +35,7 @@ source devel/setup.bash
 ```bash
 export TURTLEBOT3_MODEL=burger
 ```
-3. Run the simulation in Turtlebot3 world
+3. Run the simulation in the standard world
 ```bash
 roslaunch obstacle_avoidance drive_turtlebot3.launch
 ```

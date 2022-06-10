@@ -31,7 +31,7 @@ catkin_make
 ```bash
 source devel/setup.bash
 ```
-2. Choose your preferred Turtlebot3 model using the proper keyword among `burger`, `waffle`, `waffle_pi` for the `TURTLEBOT3_MODEL` parameter
+2. Choose your preferred **Turtlebot3** model using the proper keyword among `burger`, `waffle`, `waffle_pi` for the `TURTLEBOT3_MODEL` parameter
 ```bash
 export TURTLEBOT3_MODEL=burger
 ```

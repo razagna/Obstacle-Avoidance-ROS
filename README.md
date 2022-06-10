@@ -1,6 +1,6 @@
 ## Set Up
 ### Dependencies
-1. Follow the official ROS installation guide [here](http://wiki.ros.org/noetic/Installation/Ubuntu) (Gazebo included)
+1. Follow the official ROS Noetic installation guide [here](http://wiki.ros.org/noetic/Installation/Ubuntu) (Gazebo included)
 2. Install the ROS packages for **Turtlebot3**
 ```bash
 sudo apt install ros-noetic-turtlebot3

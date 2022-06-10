@@ -1,11 +1,12 @@
-## Dependencies
+## Set Up
+#### Dependencies
 1. Follow the official ROS installation guide [here](http://wiki.ros.org/noetic/Installation/Ubuntu) (Gazebo included)
 2. Install the ROS packages for Turtlebot3
 ```bash
 sudo apt install ros-noetic-turtlebot3
 ```
 
-## Workspace
+#### Workspace
 1. Create workspace
 ```bash
 mkdir -p catkin_ws/src
@@ -26,7 +27,7 @@ catkin_make
 ```
 
 ## Autonomous Obstacle Avoidance
-1. Open new terminal in your workspace & source your workspace
+1. Open a new terminal in your workspace & source your workspace
 ```bash
 source devel/setup.bash
 ```
@@ -40,11 +41,8 @@ roslaunch obstacle_avoidance drive_turtlebot3.launch
 ```
 
 ### Parameters
-- `show_rviz`: indicates whether to visualize the simulation data in RViz
-	```bash
-	roslaunch obstacle_avoidance drive_turtlebot3.launch show_rviz:='true'
-	```
-- `forward_distance`: minimum obstacle distance to the front
-- `side_distance`: minimum obstacle distance to the left & right
-- `forward_speed`: forward speed of the robot
-- `angular_speed`: angular speed of the robot
+- `show_rviz`: (bool) indicates whether to visualize the simulation data in RViz
+- `forward_distance`: (float) minimum obstacle distance to the front
+- `side_distance`: (float) minimum obstacle distance to the left & right
+- `forward_speed`: (float) forward speed of the robot
+- `angular_speed`: (float) angular speed of the robot

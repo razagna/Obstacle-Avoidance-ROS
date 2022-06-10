@@ -2,12 +2,6 @@
     <!-- Name of the Gazebo world -->
     <arg name="show_rviz"                   default="false"/>
 
-    <!-- Name of the Gazebo world -->
-    <arg name="world_name"                  default="turtlebot3_world"/>
-
-    <!--Name of the topic where the scan is getting published -->
-    <arg name="scan_topic"                  default="scan"/>
-
     <!-- Minimum distance to the front to detect obstacles at -->
     <arg name="forward_distance"            default="0.7"/>
 
@@ -21,11 +15,11 @@
     <arg name="angular_speed"               default="1.3"/>
 
     <!-- Launch Gazebo world -->
-    <include file="$(find turtlebot3_gazebo)/launch/$(arg world_name).launch" />
+    <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_world.launch" />
 
     <!-- Activate lidar-based autonomous steering -->
     <node name="drive_turtlebot3" pkg="obstacle_avoidance" type="drive_robot.py" output="screen">
-        <remap from="scan_topic"            to="$(arg scan_topic)"/>
+        <remap from="scan_topic"            to="scan"/>
         <param name="forward_distance"      value="$(arg forward_distance)"/>
         <param name="side_distance"         value="$(arg side_distance)"/>
         <param name="forward_speed"         value="$(arg forward_speed)"/>

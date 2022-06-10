@@ -11,17 +11,17 @@ sudo apt install ros-noetic-turtlebot3
 ```bash
 mkdir -p catkin_ws/src
 ```
-1. Clone this repository
+2. Clone this repository
 ```bash
 cd catkin_ws/src
 git clone --recursive https://github.com/razagna/Turtle3
 ```
-2. Install any missing dependencies
+3. Install any missing dependencies
 ```bash
 cd ..
 rosdep install --from-paths src --ignore-src -r -y
 ```
-3. Build the workspace
+4. Build the workspace
 ```bash
 catkin_make
 ```

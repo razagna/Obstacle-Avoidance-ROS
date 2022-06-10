@@ -1,12 +1,12 @@
 ## Set Up
-#### Dependencies
+### Dependencies
 1. Follow the official ROS installation guide [here](http://wiki.ros.org/noetic/Installation/Ubuntu) (Gazebo included)
 2. Install the ROS packages for Turtlebot3
 ```bash
 sudo apt install ros-noetic-turtlebot3
 ```
 
-#### Workspace
+### Workspace
 1. Create workspace
 ```bash
 mkdir -p catkin_ws/src

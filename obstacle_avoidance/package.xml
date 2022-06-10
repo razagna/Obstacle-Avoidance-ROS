@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>obstacle_avoidance</name>
+  <version>0.0.0</version>
+  <description>Contains a naive obstacle-avoidance node 
+  which autonomously steers a robot while keeping a certain 
+  distance from obstacles to avoid collisions.</description>
+  
+  <maintainer email="razan.i.omer@gmail.com">Razan Omer</maintainer>
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>rospy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+
+</package>

@@ -26,10 +26,11 @@ def callback(data):
     rospy.loginfo(state)
 
 def update_velocity_command(linear, angular):
-    velocity_publisher = rospy.Publisher('cmd_vel', Twist, queue_size=10)
     cmd_vel = Twist()
     cmd_vel.linear.x = linear
     cmd_vel.angular.z = angular
+
+    velocity_publisher = rospy.Publisher('cmd_vel', Twist, queue_size=10)
     velocity_publisher.publish(cmd_vel)
     
 def listener():
@@ -39,7 +40,7 @@ def listener():
 
 if __name__ == '__main__':
     min_fwd = rospy.get_param('/drive_turtlebot3/forward_distance', 0.8)
-    min_side = rospy.get_param('/drive_turtlebot3/side_distance', 0.6)
+    min_side = rospy.get_param('/drive_turtlebot3/side_distance', 0.5)
     linear_vel = rospy.get_param('/drive_turtlebot3/forward_speed', 0.5)
     angular_vel = rospy.get_param('/drive_turtlebot3/angular_speed', 1.5)
     listener()

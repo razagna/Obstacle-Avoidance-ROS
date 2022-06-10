@@ -1,11 +1,8 @@
 <launch>
-    <!-- Whether to launch RViz with Gazebo as well -->
-    <arg name="show_rviz"                   default="false"/>
-
-    <!-- Minimum distance to the front to detect obstacles at -->
+    <!-- Minimum obstacle distance to the front of the robot -->
     <arg name="forward_distance"            default="0.7"/>
 
-    <!-- Minimum distance to the sides to detect obstacles at -->
+    <!-- Minimum obstacle distance to the left & right sides of the robot -->
     <arg name="side_distance"               default="0.6"/>
     
     <!-- Forward speed of the robot -->
@@ -14,10 +11,13 @@
     <!-- Angular speed of the robot -->
     <arg name="angular_speed"               default="1.3"/>
 
+    <!-- Launch RViz with Gazebo -->
+    <arg name="show_rviz"                   default="false"/>
+
     <!-- Launch Gazebo world -->
     <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_world.launch" />
 
-    <!-- Activate lidar-based autonomous steering -->
+    <!-- Activate lidar-based autonomous obstacle avoidance -->
     <node name="drive_turtlebot3" pkg="obstacle_avoidance" type="drive_robot.py" output="screen">
         <remap from="scan_topic"            to="scan"/>
         <param name="forward_distance"      value="$(arg forward_distance)"/>

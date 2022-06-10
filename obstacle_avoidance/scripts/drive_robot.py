@@ -38,9 +38,9 @@ def listener():
     rospy.spin()
 
 if __name__ == '__main__':
-    min_fwd = rospy.get_param('/drive_turtlebot3/forward_distance', 0.0)
-    min_side = rospy.get_param('/drive_turtlebot3/side_distance', 0.0)
-    linear_vel = rospy.get_param('/drive_turtlebot3/forward_speed', 0.0)
-    angular_vel = rospy.get_param('/drive_turtlebot3/angular_speed', 0.0)
+    min_fwd = rospy.get_param('/drive_turtlebot3/forward_distance', 0.8)
+    min_side = rospy.get_param('/drive_turtlebot3/side_distance', 0.6)
+    linear_vel = rospy.get_param('/drive_turtlebot3/forward_speed', 0.5)
+    angular_vel = rospy.get_param('/drive_turtlebot3/angular_speed', 1.5)
     listener()
     

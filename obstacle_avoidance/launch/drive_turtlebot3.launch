@@ -1,5 +1,5 @@
 <launch>
-    <!-- Name of the Gazebo world -->
+    <!-- Whether to launch RViz with Gazebo as well -->
     <arg name="show_rviz"                   default="false"/>
 
     <!-- Minimum distance to the front to detect obstacles at -->

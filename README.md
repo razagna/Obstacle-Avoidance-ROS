@@ -1,7 +1,7 @@
 ## Set Up
 ### Dependencies
 1. Follow the official ROS Noetic installation guide [here](http://wiki.ros.org/noetic/Installation/Ubuntu) (Gazebo included)
-2. Install the ROS packages for **Turtlebot3**
+2. Install the ROS packages for **TurtleBot3**
 ```bash
 sudo apt install ros-noetic-turtlebot3
 ```
@@ -31,7 +31,7 @@ catkin_make
 ```bash
 source devel/setup.bash
 ```
-2. Choose your preferred **Turtlebot3** model using the proper keyword among `burger`, `waffle` & `waffle_pi`
+2. Choose your preferred **TurtleBot3** model using the proper keyword among `burger`, `waffle` & `waffle_pi`
 ```bash
 export TURTLEBOT3_MODEL=burger
 ```

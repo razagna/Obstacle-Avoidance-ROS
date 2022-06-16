@@ -14,7 +14,7 @@ mkdir -p catkin_ws/src
 2. Clone this repository
 ```bash
 cd catkin_ws/src
-git clone --recursive https://github.com/razagna/Turtle3
+git clone --recursive https://github.com/razagna/Obstacle-Avoidance-Node
 ```
 3. Install any missing dependencies
 ```bash

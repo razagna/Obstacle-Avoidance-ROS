@@ -14,7 +14,7 @@ mkdir -p catkin_ws/src
 2. Clone this repository
 ```bash
 cd catkin_ws/src
-git clone --recursive https://github.com/razagna/Obstacle-Avoidance-Node
+git clone --recursive https://github.com/razagna/Obstacle-Avoidance-ROS
 ```
 3. Install any missing dependencies
 ```bash

@@ -10,10 +10,10 @@ sudo apt install ros-noetic-turtlebot3
 1. Create a workspace
 ```bash
 mkdir -p catkin_ws/src
+cd catkin_ws/src
 ```
 2. Clone this repository
 ```bash
-cd catkin_ws/src
 git clone --recursive https://github.com/razagna/Obstacle-Avoidance-ROS
 ```
 3. Install any missing dependencies
